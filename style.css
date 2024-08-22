@@ -22,7 +22,7 @@ body,html{
     width:30%;
     display: flex;
     align-items: center;
-    gap:2rem;
+    gap:1rem;
     justify-content: right;
 }
 #pfp{
@@ -51,25 +51,36 @@ body,html{
     grid-row:1/4;
     background-color: #27272a;
     display: grid;
-    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-rows: 1.2fr 3fr 3fr;
 color:#e4e4e7;
 padding:0 2rem;
 padding-top:1rem ;
 }
 
-.home , .settings{
-display: flex;
-flex-direction: column;
-gap:1rem;
+.logo{
+    font-size:x-large;
+    display: grid;
+    grid-template-columns: repeat(2,2.5rem);
+    margin-top: 1rem;   
+    align-items: center;
+    height: 30%;
 }
+
 .icon{
     color:#e4e4e7;
 }
-.side span{
-    display: flex;
-    gap: 1rem;
-    padding-left: 10px;
+.home{
+display: grid;
+grid-template-columns: repeat(2,2rem);
+height: 80%;
 }
+.settings{
+    margin-top: 1rem;
+    height:40%;
+    display: grid;
+    grid-template-columns: repeat(2,2rem);
+}
+
 
 /*base for the nav section*/
 .nav{
@@ -123,6 +134,17 @@ gap:1rem;
 
 /*base for the article section*/
 .article{
-
+   
+     display: grid;
+     grid-template-columns: 4fr 1fr;
+     padding:0rem 2rem;
+     padding-top: 2rem;
 }
+.posts{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
 
